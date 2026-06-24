@@ -1,0 +1,20 @@
+# Runtime / dev artifacts
+.serverpid
+screenshots/
+_convert_logo.py
+apex-logo-full.png
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Vercel local
+.vercel/
+
+# Node (not used, but here in case the project ever grows)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
