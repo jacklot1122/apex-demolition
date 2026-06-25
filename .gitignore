@@ -1,7 +1,7 @@
 # Runtime / dev artifacts
 .serverpid
 screenshots/
-_convert_logo.py
+_*.py
 apex-logo-full.png
 
 # OS / editor

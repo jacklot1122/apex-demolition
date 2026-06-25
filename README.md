@@ -28,12 +28,12 @@ Hosted on **Vercel**. Push to `main` → auto-deploy. Caching headers for static
 
 ## Quote form
 
-Submitting the quote form opens the user's default email client with a prefilled message to **iearthworx@outlook.com**. No backend required.
+Submitting the quote form opens the user's default email client with a prefilled message to **apexteam@outlook.com**. No backend required.
 
 To upgrade to a no-redirect submission later, point the `<form>` `action` at Formspree, Web3Forms, or Vercel Forms.
 
 ## Contact
 
-- **Phone:** 0499 921 002
-- **Email:** iearthworx@outlook.com
+- **Phone:** 0466 209 209
+- **Email:** apexteam@outlook.com
 - **Instagram:** [@apex_demos](https://www.instagram.com/apex_demos/)
