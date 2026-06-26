@@ -808,7 +808,7 @@ button { font: inherit; }
   gap: 14px;
 }
 .work-track {
-  --card-w: clamp(280px, 60vw, 720px);
+  --card-w: clamp(320px, 56vw, 640px);
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: var(--card-w);
@@ -827,7 +827,7 @@ button { font: inherit; }
 .work-track:focus-visible { box-shadow: inset 0 0 0 2px var(--accent); }
 
 @media (max-width: 879px) {
-  .work-track { --card-w: 88vw; }
+  .work-track { --card-w: 84vw; }
 }
 
 .work-item {
