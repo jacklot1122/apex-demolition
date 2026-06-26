@@ -201,18 +201,30 @@
       <p class="section-kicker">A snapshot of recent residential and commercial jobs — strip-outs, slab removal, basements, and site preps across the network.</p>
     </header>
 
-    <div class="work-grid">
-      <figure class="work-item"><picture><source type="image/webp" sizes="(max-width: 520px) 100vw, (max-width: 900px) 50vw, 33vw" srcset="photos/work-01-600.webp 600w, photos/work-01-1200.webp 1200w" /><img src="photos/work-01.jpg" alt="Excavator loading a tipper at dawn" loading="lazy" decoding="async" width="1200" height="1600" /></picture><figcaption><span>Demolition</span><strong>Pre-dawn load-out</strong></figcaption></figure>
-      <figure class="work-item"><picture><source type="image/webp" sizes="(max-width: 520px) 100vw, (max-width: 900px) 50vw, 33vw" srcset="photos/work-03-600.webp 600w, photos/work-03-1200.webp 1200w" /><img src="photos/work-03.jpg" alt="Heavy strip-out with yellow excavator" loading="lazy" decoding="async" width="1400" height="1050" /></picture><figcaption><span>Demolition</span><strong>Heavy strip-out</strong></figcaption></figure>
-      <figure class="work-item"><picture><source type="image/webp" sizes="(max-width: 520px) 100vw, (max-width: 900px) 50vw, 33vw" srcset="photos/work-02-600.webp 600w, photos/work-02-900.webp 900w" /><img src="photos/work-02.jpg" alt="Apex truck on the road" loading="lazy" decoding="async" width="900" height="1600" /></picture><figcaption><span>Logistics</span><strong>Fleet on the move</strong></figcaption></figure>
-      <figure class="work-item"><picture><source type="image/webp" sizes="(max-width: 520px) 100vw, (max-width: 900px) 50vw, 33vw" srcset="photos/work-04-600.webp 600w, photos/work-04-1200.webp 1200w" /><img src="photos/work-04.jpg" alt="House standing before demolition" loading="lazy" decoding="async" width="1400" height="1050" /></picture><figcaption><span>Residential</span><strong>Standing — before</strong></figcaption></figure>
-      <figure class="work-item"><picture><source type="image/webp" sizes="(max-width: 520px) 100vw, (max-width: 900px) 50vw, 33vw" srcset="photos/work-06-600.webp 600w, photos/work-06-1200.webp 1200w" /><img src="photos/work-06.jpg" alt="Concrete rubble stockpile" loading="lazy" decoding="async" width="1200" height="1600" /></picture><figcaption><span>Recycling</span><strong>Concrete stockpile</strong></figcaption></figure>
-      <figure class="work-item"><picture><source type="image/webp" sizes="(max-width: 520px) 100vw, (max-width: 900px) 50vw, 33vw" srcset="photos/work-05-600.webp 600w, photos/work-05-1200.webp 1200w" /><img src="photos/work-05.jpg" alt="Residential site survey" loading="lazy" decoding="async" width="1400" height="1050" /></picture><figcaption><span>Residential</span><strong>Site survey</strong></figcaption></figure>
-      <figure class="work-item"><picture><source type="image/webp" sizes="(max-width: 520px) 100vw, (max-width: 900px) 50vw, 33vw" srcset="photos/work-07-600.webp 600w, photos/work-07-1200.webp 1200w" /><img src="photos/work-07.jpg" alt="Mid-strip site with rubble" loading="lazy" decoding="async" width="1400" height="1050" /></picture><figcaption><span>Demolition</span><strong>Mid-strip site</strong></figcaption></figure>
-      <figure class="work-item"><picture><source type="image/webp" sizes="(max-width: 520px) 100vw, (max-width: 900px) 50vw, 33vw" srcset="photos/work-09-600.webp 600w, photos/work-09-1200.webp 1200w" /><img src="photos/work-09.jpg" alt="Deep basement excavation" loading="lazy" decoding="async" width="1200" height="1600" /></picture><figcaption><span>Excavation</span><strong>Basement dig</strong></figcaption></figure>
-      <figure class="work-item"><picture><source type="image/webp" sizes="(max-width: 520px) 100vw, (max-width: 900px) 50vw, 33vw" srcset="photos/work-08-600.webp 600w, photos/work-08-1200.webp 1200w" /><img src="photos/work-08.jpg" alt="Cleared and graded lot" loading="lazy" decoding="async" width="1200" height="1600" /></picture><figcaption><span>Site Prep</span><strong>Cleared &amp; graded</strong></figcaption></figure>
-      <figure class="work-item"><picture><source type="image/webp" sizes="(max-width: 520px) 100vw, (max-width: 900px) 50vw, 33vw" srcset="photos/work-10-600.webp 600w, photos/work-10-1200.webp 1200w" /><img src="photos/work-10.jpg" alt="Excavator working on cut" loading="lazy" decoding="async" width="1200" height="1600" /></picture><figcaption><span>Excavation</span><strong>On the cut</strong></figcaption></figure>
+    <div class="work-shell">
+      <button class="work-arrow work-arrow-prev" type="button" aria-label="Previous photo" aria-controls="workTrack">
+        <svg viewBox="0 0 24 24" aria-hidden="true" width="22" height="22"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/></svg>
+      </button>
+
+      <div class="work-track" id="workTrack" role="region" aria-label="Recent work carousel" tabindex="0">
+        <figure class="work-item"><picture><source type="image/webp" sizes="(max-width: 879px) 88vw, 720px" srcset="photos/work-01-600.webp 600w, photos/work-01-1200.webp 1200w" /><img src="photos/work-01.jpg" alt="Excavator loading a tipper at dawn" loading="lazy" decoding="async" width="1200" height="1600" /></picture><figcaption><span>Demolition</span><strong>Pre-dawn load-out</strong></figcaption></figure>
+        <figure class="work-item"><picture><source type="image/webp" sizes="(max-width: 879px) 88vw, 720px" srcset="photos/work-03-600.webp 600w, photos/work-03-1200.webp 1200w" /><img src="photos/work-03.jpg" alt="Heavy strip-out with yellow excavator" loading="lazy" decoding="async" width="1400" height="1050" /></picture><figcaption><span>Demolition</span><strong>Heavy strip-out</strong></figcaption></figure>
+        <figure class="work-item"><picture><source type="image/webp" sizes="(max-width: 879px) 88vw, 720px" srcset="photos/work-02-600.webp 600w, photos/work-02-900.webp 900w" /><img src="photos/work-02.jpg" alt="Apex truck on the road" loading="lazy" decoding="async" width="900" height="1600" /></picture><figcaption><span>Logistics</span><strong>Fleet on the move</strong></figcaption></figure>
+        <figure class="work-item"><picture><source type="image/webp" sizes="(max-width: 879px) 88vw, 720px" srcset="photos/work-04-600.webp 600w, photos/work-04-1200.webp 1200w" /><img src="photos/work-04.jpg" alt="House standing before demolition" loading="lazy" decoding="async" width="1400" height="1050" /></picture><figcaption><span>Residential</span><strong>Standing — before</strong></figcaption></figure>
+        <figure class="work-item"><picture><source type="image/webp" sizes="(max-width: 879px) 88vw, 720px" srcset="photos/work-06-600.webp 600w, photos/work-06-1200.webp 1200w" /><img src="photos/work-06.jpg" alt="Concrete rubble stockpile" loading="lazy" decoding="async" width="1200" height="1600" /></picture><figcaption><span>Recycling</span><strong>Concrete stockpile</strong></figcaption></figure>
+        <figure class="work-item"><picture><source type="image/webp" sizes="(max-width: 879px) 88vw, 720px" srcset="photos/work-05-600.webp 600w, photos/work-05-1200.webp 1200w" /><img src="photos/work-05.jpg" alt="Residential site survey" loading="lazy" decoding="async" width="1400" height="1050" /></picture><figcaption><span>Residential</span><strong>Site survey</strong></figcaption></figure>
+        <figure class="work-item"><picture><source type="image/webp" sizes="(max-width: 879px) 88vw, 720px" srcset="photos/work-07-600.webp 600w, photos/work-07-1200.webp 1200w" /><img src="photos/work-07.jpg" alt="Mid-strip site with rubble" loading="lazy" decoding="async" width="1400" height="1050" /></picture><figcaption><span>Demolition</span><strong>Mid-strip site</strong></figcaption></figure>
+        <figure class="work-item"><picture><source type="image/webp" sizes="(max-width: 879px) 88vw, 720px" srcset="photos/work-09-600.webp 600w, photos/work-09-1200.webp 1200w" /><img src="photos/work-09.jpg" alt="Deep basement excavation" loading="lazy" decoding="async" width="1200" height="1600" /></picture><figcaption><span>Excavation</span><strong>Basement dig</strong></figcaption></figure>
+        <figure class="work-item"><picture><source type="image/webp" sizes="(max-width: 879px) 88vw, 720px" srcset="photos/work-08-600.webp 600w, photos/work-08-1200.webp 1200w" /><img src="photos/work-08.jpg" alt="Cleared and graded lot" loading="lazy" decoding="async" width="1200" height="1600" /></picture><figcaption><span>Site Prep</span><strong>Cleared &amp; graded</strong></figcaption></figure>
+        <figure class="work-item"><picture><source type="image/webp" sizes="(max-width: 879px) 88vw, 720px" srcset="photos/work-10-600.webp 600w, photos/work-10-1200.webp 1200w" /><img src="photos/work-10.jpg" alt="Excavator working on cut" loading="lazy" decoding="async" width="1200" height="1600" /></picture><figcaption><span>Excavation</span><strong>On the cut</strong></figcaption></figure>
+      </div>
+
+      <button class="work-arrow work-arrow-next" type="button" aria-label="Next photo" aria-controls="workTrack">
+        <svg viewBox="0 0 24 24" aria-hidden="true" width="22" height="22"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/></svg>
+      </button>
     </div>
+
+    <div class="work-dots" id="workDots" role="tablist" aria-label="Select photo"></div>
 
     <p class="work-footnote"><span class="mono-tag">[ MORE WORK ON INSTAGRAM ]</span> <a href="https://www.instagram.com/apex_demos/" target="_blank" rel="noopener">@apex_demos ↗</a></p>
   </section>
@@ -759,6 +771,109 @@
         }
         // Only pause on direct interaction with controls/track, not on stray taps
         // anywhere over the shell — important for mobile where users tap to scroll past.
+        function tapPause() { pause(); scheduleResume(); }
+        [prevBtn, nextBtn, track].forEach(function (el) {
+          if (el) el.addEventListener('pointerdown', tapPause, { passive: true });
+        });
+        if (dotsWrap) dotsWrap.addEventListener('click', tapPause);
+      }
+    })();
+
+    // ===== Work carousel =====
+    (function () {
+      var track = document.getElementById('workTrack');
+      var dotsWrap = document.getElementById('workDots');
+      if (!track || !dotsWrap) return;
+
+      var cards = track.querySelectorAll('.work-item');
+      if (!cards.length) return;
+
+      var prevBtn = document.querySelector('.work-arrow-prev');
+      var nextBtn = document.querySelector('.work-arrow-next');
+
+      for (var i = 0; i < cards.length; i++) {
+        var d = document.createElement('button');
+        d.type = 'button';
+        d.className = 'work-dot';
+        d.setAttribute('role', 'tab');
+        d.setAttribute('aria-label', 'Go to photo ' + (i + 1));
+        d.dataset.idx = i;
+        if (i === 0) d.classList.add('active');
+        dotsWrap.appendChild(d);
+      }
+      var dots = dotsWrap.querySelectorAll('.work-dot');
+
+      function scrollToIndex(i) {
+        var card = cards[i];
+        if (!card) return;
+        var tRect = track.getBoundingClientRect();
+        var cRect = card.getBoundingClientRect();
+        var delta = (cRect.left + cRect.width / 2) - (tRect.left + track.clientWidth / 2);
+        track.scrollTo({ left: track.scrollLeft + delta, behavior: 'smooth' });
+      }
+
+      dotsWrap.addEventListener('click', function (e) {
+        var t = e.target.closest('.work-dot');
+        if (!t) return;
+        scrollToIndex(parseInt(t.dataset.idx, 10));
+      });
+
+      function activeIndex() {
+        var tRect = track.getBoundingClientRect();
+        var center = tRect.left + track.clientWidth / 2;
+        var best = 0, bestDist = Infinity;
+        for (var i = 0; i < cards.length; i++) {
+          var r = cards[i].getBoundingClientRect();
+          var mid = r.left + r.width / 2;
+          var dist = Math.abs(mid - center);
+          if (dist < bestDist) { bestDist = dist; best = i; }
+        }
+        return best;
+      }
+
+      var raf;
+      function onScroll() {
+        if (raf) cancelAnimationFrame(raf);
+        raf = requestAnimationFrame(function () {
+          var idx = activeIndex();
+          for (var i = 0; i < dots.length; i++) {
+            dots[i].classList.toggle('active', i === idx);
+          }
+        });
+      }
+      track.addEventListener('scroll', onScroll, { passive: true });
+
+      function step(dir) {
+        var idx = activeIndex();
+        var next = (idx + dir + cards.length) % cards.length;
+        scrollToIndex(next);
+      }
+      if (prevBtn) prevBtn.addEventListener('click', function () { step(-1); });
+      if (nextBtn) nextBtn.addEventListener('click', function () { step(1); });
+
+      track.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight') { e.preventDefault(); step(1); }
+        else if (e.key === 'ArrowLeft') { e.preventDefault(); step(-1); }
+      });
+
+      var prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var AUTOPLAY_MS = 4500;
+      var RESUME_MS = 9000;
+      var paused = false;
+      var resumeT;
+      function autoTick() { if (paused || document.hidden) return; step(1); }
+      function pause() { paused = true; clearTimeout(resumeT); }
+      function scheduleResume() { clearTimeout(resumeT); resumeT = setTimeout(function () { paused = false; }, RESUME_MS); }
+      function resume() { scheduleResume(); }
+      if (!prefersReduced) {
+        setInterval(autoTick, AUTOPLAY_MS);
+        var shell = document.querySelector('.work-shell');
+        if (shell) {
+          shell.addEventListener('mouseenter', pause);
+          shell.addEventListener('mouseleave', resume);
+          shell.addEventListener('focusin', pause);
+          shell.addEventListener('focusout', resume);
+        }
         function tapPause() { pause(); scheduleResume(); }
         [prevBtn, nextBtn, track].forEach(function (el) {
           if (el) el.addEventListener('pointerdown', tapPause, { passive: true });
